@@ -1,0 +1,588 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #2E2F42
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* Header alanı */
+
+.header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 1140px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.logo {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #2E2F42;
+    text-decoration: none;
+    line-height: 1.16;
+    padding: 25.5px;
+}
+
+.nav {
+    background-color: #FFFFFF;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 24px;
+}
+
+.nav-list li a {
+    position: relative;
+    display: inline-block;
+    color: #2e2f42;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.nav-list li a:hover,
+.nav-list li a:active {
+    color: #404bbf;
+    text-decoration: none;
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list a:hover::after {
+    position: absolute;
+    top: 44px;
+    /* Y konumu */
+    left: 50%;
+    width: 44px;
+    height: 4px;
+    background-color: #404bbf;
+    transform: translateX(-50%);
+    content: "";
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo span {
+    color: #4D5AE5;
+}
+
+.Studio {
+    color: #2E2F42;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: medium;
+    line-height: 1.5;
+}
+
+.Studio:hover {
+    color: #404BBF;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: medium;
+    line-height: 1.5;
+}
+
+.Studio:active {
+    color: #404BBF;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: medium;
+    line-height: 1.5;
+}
+
+.Portfolio{
+    color: #2E2F42;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: medium;
+    line-height: 1.5;
+}
+
+.Portfolio:hover {
+    color: #404BBF;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: medium;
+    line-height: 1.5;
+}
+
+.Contacts {
+    color: #2E2F42;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: medium;
+    line-height: 1.5;
+}
+
+.Contacts:hover {
+    color: #404BBF;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: medium;
+    line-height: 1.5;
+}
+
+.address-list ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: auto;
+    padding: 24px;
+}
+
+.adress {
+    color: #434455;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1.5;
+
+}
+
+.adress:hover {
+    color: #404BBF;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+/* Header alanı bitiş */
+
+/*Main başlangıç */
+
+.post-tittle {
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 2%;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 496px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+}
+
+.post {
+    background-color: #2E2F42;
+    padding: 120px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    max-width: 1440px;
+    background-image: linear-gradient(to bottom,
+             rgba(46, 47, 66, 0.7),
+             rgba(46, 47, 66, 0.7)),
+            url(../images/people-office1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.button {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    text-align: center ;
+    line-height: 1.5;
+    letter-spacing: 4%;
+    cursor: pointer;
+    font-weight: medium;
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #404BBF;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 4%;
+    cursor: pointer;
+    font-weight: medium;
+    padding: 16px 32px;
+    border-radius: 4px;
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.p{
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.pp {
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    width: 1128px;
+    margin: 0 auto;
+}
+
+.about ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 120px;
+    gap: 24px; 
+}
+
+.about ul li{
+    width: 264px;
+}
+
+.icon-antenna1, .icon-clock1, .icon-diagram1, .icon-astronaut1 {
+    width: 64px;
+    height: 112px;
+}
+
+.iconlarim {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon-item {
+    border: 1px solid #8E8F99;
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.Strategy {
+    font-size: 20px;
+    font-weight: medium;
+    color: #2E2F42;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.Punctuality {
+    font-size: 20px;
+    font-weight: medium;
+    color: #2E2F42;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.Diligence {
+    font-size: 20px;
+    font-weight: medium;
+    color: #2E2F42;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.Technologies {
+    font-size: 20px;
+    font-weight: medium;
+    color: #2E2F42;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.team {
+    background-color: #F4F4FD;
+    padding: 120px;
+}
+
+.team ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.our-team {
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.1;
+    letter-spacing: 2%;
+    color: #2E2F42;
+    font-weight: bold;
+    padding-bottom: 72px;
+}
+
+.team-list {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+                0 1px 1px 0 rgba(46, 47, 66, 0.16),
+                0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    width: 264px;
+    background-color: #FFFFFF;
+    text-align: center;
+    height: 428px;
+}
+
+.sosyal-medya .team-list {
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.sosyal-medya .team-list:hover {
+    background-color: #404BBF;
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sosyal-medya .team-list .icon-instagram,
+.sosyal-medya .team-list .icon-facebook, 
+.sosyal-medya .team-list .icon-linkedin, 
+.sosyal-medya .team-list .icon-twitter {
+    width: 16px;
+    height: 16px;
+}
+
+.mark-guerrero {
+    font-size: 20px;
+    font-weight: medium;
+    color: #2E2F42;
+    line-height: 1.2;
+    padding-top: 32px;
+}
+
+.tom-ford {
+    font-size: 20px;
+    font-weight: medium;
+    color: #2E2F42;
+    line-height: 1.2;
+    padding-top: 32px;
+}
+
+.camila-garcia {
+    font-size: 20px;
+    font-weight: medium;
+    color: #2E2F42;
+    line-height: 1.2;
+    padding-top: 32px;
+}
+
+.daniel-wilson {
+    font-size: 20px;
+    font-weight: medium;
+    color: #2E2F42;
+    line-height: 1.2;
+    padding-top: 32px;
+}
+
+.p {
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
+
+.portfolio ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.our-portfolio {
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.1;
+    letter-spacing: 2%;
+    color: #2E2F42;
+    font-weight: bold;
+    padding: 120px;
+    padding-bottom: 72px;
+}
+
+.li {
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.h3 {
+    font-size: 20px;
+    font-weight: medium;
+    color: #2E2F42;
+    line-height: 1.2;
+    padding-bottom: 120px;
+}
+
+.p {
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image-box {
+    width: 360px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-box .hover-box {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    background-color: #4D5AE5;
+    padding-top: 40px;
+    padding-bottom: 164px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    inset: 0;
+    color: #F4F4FD;
+    transform: translateY(100%);
+    transition: transform 250ms ease, box-shadow 250ms ease;
+    text-align: left;
+}
+
+.image-box:hover .hover-box {
+    height: 300px;
+    transform: translateY(0);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/*Main bitiş */
+
+/* Footer başlangıç */
+
+.footer-logo {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #F4F4FD;
+    text-decoration: none;
+    line-height: 1.16;
+}
+
+.nav-list {
+    background-color: #FFFFFF;
+}
+
+.footer-logo span {
+    color: #4D5AE5;
+}
+
+.footer-p {
+    color: #F4F4FD;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 264px;
+    padding-top: 15px;
+}
+
+.footer-p2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    justify-content: flex-start;
+    display: flex;
+    padding-bottom: 16px;
+    gap:120px;
+}
+
+.footer-right .team-list2 {
+    list-style-type: none;
+    background-color: #4D5AE5;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-right .team-list2:hover {
+    list-style-type: none;
+    background-color: #31D0AA;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sosyal-medya2 {
+    gap: 16px;
+    width: 208px;
+    height: 40px;
+    display: flex;
+}
+
+.footer-right .team-list2 .icon-instagram2,
+.footer-right .team-list2 .icon-facebook2,
+.footer-right .team-list2 .icon-linkedin2,
+.footer-right .team-list2 .icon-twitter2 {
+    height: 24px;
+}
+
+.footer {
+    background-color: #2E2F42;
+    flex-direction: row;
+    padding: 120px;
+    padding-bottom: 100px;
+    padding-left: 156px;
+    padding-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+/* Footer bitiş */
