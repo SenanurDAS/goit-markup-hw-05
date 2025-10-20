@@ -160,7 +160,9 @@
             <p class="pp">Marketing</p>
             <ul class="sosyal-medya">
               <li class="team-list">
-                 >
+                <svg class="icon icon-instagram">
+                  <use xlink:href="./images/symbol-defs.svg#icon-instagram2"></use>
+                </svg>
               </li>
               <li class="team-list">
                 <svg class="icon icon-twitter">
@@ -332,8 +334,68 @@
       </li>
       </div>
     </div>
-    </footer>
-    <!-- footer bitiş -->
+    
+      <div class="subscribe-box">
+      <form>
+        <p>Subscribe</p>
+        <label>
+          <input type="email" name="email" placeholder="E-mail" class="subscribe-input" />
+        </label>
+        <button class="subscribe-btn" type="submit">
+          Subscribe <svg class="icon icon-icon-send">
+            <use xlink:href="symbol-defs.svg#icon-icon-send"></use>
+          </svg>
+        </button>
+      </form>
+      </div>
+  </footer>
+  <!-- footer bitiş --> 
+
+  <!-- modal başlangıç -->
+
+  <div class="modal">
+    <div class="modal-content">
     </div>
-  </body>
+  </div>
+  
+  <div class="modal is-open">
+    <div class="modal-content">
+      <form class="modal-form">
+       <div class="modal-form-input-container">
+        <label class="model-form-label" for="name">Name</label>
+        <input class="modal-form-input" type="text" id="name" name="name" />
+       <svg class="icon icon-name">
+         <use xlink:href="./images/symbol-defs.svg#icon-name"></use>
+       </svg>
+       </div>
+       <div class="modal-form-input-container">
+         <label class="model-form-label" for="phone">Phone</label>
+         <input class="modal-form-input" type="tel" id="name" name="phone" />
+         <svg class="icon icon-phone">
+           <use xlink:href="./images/symbol-defs.svg#icon-phone"></use>
+         </svg>
+       </div>
+      <div class="modal-form-input-container">
+        <label class="model-form-label" for="email">Email</label>
+        <input class="modal-form-input" type="tel" id="name" name="phone" />
+        <svg class="icon icon-mail">
+          <use xlink:href="symbol-defs.svg#icon-mail"></use>
+        </svg>
+      </div>
+      <div class="modal-form-input-container">
+        <label class="model-form-label" for="comment">Comment</label>
+        <textarea class="modal-form-input" name="comment" ></textarea>
+        <svg class="icon icon-mail">
+          <use xlink:href="symbol-defs.svg#icon-mail"></use>
+        </svg>
+      </div>
+      </form>
+    </div>
+  </div>
+  
+  
+  <!-- modal bitiş -->
+  
+</div>
+</body>
 </html>
