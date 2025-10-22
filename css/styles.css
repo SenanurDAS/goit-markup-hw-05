@@ -587,9 +587,8 @@ ul li {
 
 .subscribe-box {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     gap: 240px;
-    border: 1px solid red;
 }
 
 .subscribe-box P {
@@ -639,13 +638,42 @@ ul li {
     align-items: center;
 }
 
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .is-open {
     display: flex;
 }
 
+.vector {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1);
+    fill: #2e2f42;
+    margin-bottom: 24px;
+    margin-left: 360px;
+    cursor: pointer;
+}
+
+.modal-content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 34px;
+}
+
 .modal-content {
     background-color: #FFFFFF;
-    padding: 112px 24px;
+    padding: 72px 24px;
     border-radius: 4px;
     width: 408px;
 }
@@ -661,6 +689,12 @@ ul li {
     border-radius: 4px;
     padding-left: 38px;
     padding: 14px;
+    width: 360px;
+    height: 58px;
+}
+
+.modal-form-input-wrapper {
+    position: relative;
 }
 
 .form-icon {
@@ -672,7 +706,6 @@ ul li {
     height: 22px;
     fill: #2e2f42;
     transition: fill 0.3s ease-in-out;
-    border: 1px solid red;
 }
 
 .modal-form-input:focus,
@@ -680,5 +713,48 @@ ul li {
     border-color: #4d5ae5;
 }
 
+.modal-form-input:focus + .form-icon,
+.modal-form-input:hover + .form-icon {
+    fill: #4d5ae5;
+}
+
+.checkbox-group {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    font-family: "Roboto", sans-serif;
+}
+
+.checkbox-group a {
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.form-button {
+    display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 10px;
+}
+
+.button-content{
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+}
 
 /* Modal bitiş */
