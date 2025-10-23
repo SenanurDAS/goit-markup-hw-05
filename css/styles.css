@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -583,12 +583,22 @@ ul li {
     display: flex;
     align-items: flex-start;
     gap: 120px;
+    justify-content: center;
+}
+
+.footer-left {
+    width: 264px;
+}
+
+.footer-right {
+    width: 208px;
 }
 
 .subscribe-box {
     display: flex;
     flex-direction: column;
     gap: 240px;
+    width: 453px;
 }
 
 .subscribe-box P {
@@ -607,6 +617,7 @@ ul li {
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #2e2f42;
+
 }
 
 .subscribe-btn {
@@ -620,6 +631,13 @@ ul li {
     width: 165px;
     height: 40px;
     background: #4d5ae5;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding-top: 16px;
 }
 
 /* Footer bitiş */ 
@@ -649,15 +667,23 @@ ul li {
 }
 
 .vector {
-    width: 24px;
-    height: 24px;
+    width: 8px;
+    height: 8px;
     border-radius: 100%;
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.1);
-    fill: #2e2f42;
-    margin-bottom: 24px;
     margin-left: 360px;
     cursor: pointer;
+}
+
+.modal-vector {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding-bottom: 24px;
+    background-color: #E7E9FC;
+    border-radius: 100%;
+    
 }
 
 .modal-content p {
@@ -668,7 +694,8 @@ ul li {
     text-align: center;
     color: #2e2f42;
     font-family: "Roboto", sans-serif;
-    padding-bottom: 34px;
+    padding-bottom: 16px;
+    padding-top: 24px;
 }
 
 .modal-content {
@@ -687,8 +714,8 @@ ul li {
 .modal-form-input {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    padding-left: 38px;
     padding: 14px;
+    padding-left: 38px;
     width: 360px;
     height: 58px;
 }
@@ -700,22 +727,22 @@ ul li {
 .form-icon {
     position: absolute;
     top: 50%;
-    left: 8px;
+    left: 19px;
     transform: translateY(-50%);
-    width: 22px;
-    height: 22px;
+    width: 15px;
+    height: 15px;
     fill: #2e2f42;
     transition: fill 0.3s ease-in-out;
 }
 
 .modal-form-input:focus,
 .modal-form-input:hover {
-    border-color: #4d5ae5;
+    border-color: #4D5AE5;
 }
 
 .modal-form-input:focus + .form-icon,
 .modal-form-input:hover + .form-icon {
-    fill: #4d5ae5;
+    fill: #4D5AE5;
 }
 
 .checkbox-group {
