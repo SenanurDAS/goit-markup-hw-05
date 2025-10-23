@@ -666,24 +666,29 @@ ul li {
     display: flex;
 }
 
+.modal-vector {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #E7E9FC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 .vector {
+    right: 32px;
     width: 8px;
     height: 8px;
     border-radius: 100%;
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.1);
-    margin-left: 360px;
+    color: #2E2F42;
     cursor: pointer;
-}
-
-.modal-vector {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    padding-bottom: 24px;
-    background-color: #E7E9FC;
-    border-radius: 100%;
-    
 }
 
 .modal-content p {
@@ -695,7 +700,7 @@ ul li {
     color: #2e2f42;
     font-family: "Roboto", sans-serif;
     padding-bottom: 16px;
-    padding-top: 24px;
+    top: 24px;
 }
 
 .modal-content {
@@ -703,6 +708,7 @@ ul li {
     padding: 72px 24px;
     border-radius: 4px;
     width: 408px;
+    position: relative;
 }
 
 .modal-form-input-container {
