@@ -680,6 +680,12 @@ ul li {
     cursor: pointer;
 }
 
+.modal-vector:hover {
+    border-radius: 100%;
+    fill: #404bbf;
+    background-color: #404bbf;
+}
+    
 .vector {
     right: 32px;
     width: 8px;
@@ -689,6 +695,10 @@ ul li {
     stroke: rgba(0, 0, 0, 0.1);
     color: #2E2F42;
     cursor: pointer;
+}
+
+.vector:hover {
+    fill: #fff;
 }
 
 .modal-content p {
@@ -723,7 +733,6 @@ ul li {
     padding: 14px;
     padding-left: 38px;
     width: 360px;
-    height: 58px;
 }
 
 .modal-form-input-wrapper {
@@ -744,11 +753,13 @@ ul li {
 .modal-form-input:focus,
 .modal-form-input:hover {
     border-color: #4D5AE5;
+    outline: none;
 }
 
 .modal-form-input:focus + .form-icon,
 .modal-form-input:hover + .form-icon {
     fill: #4D5AE5;
+    outline: none;
 }
 
 .checkbox-group {
@@ -769,10 +780,10 @@ ul li {
 
 .form-button {
     display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: row;
-        padding-top: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 10px;
 }
 
 .button-content{
@@ -788,6 +799,15 @@ ul li {
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
+}
+
+.model-form-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Modal bitiş */
